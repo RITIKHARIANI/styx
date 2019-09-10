@@ -1,5 +1,5 @@
-# styx
-File Sharing on a local area network.
+# Styx: File Sharing
+**Under construction**
 
 The project
 > Look at [idea](https://github.com/rehanvipin/styx/IDEA.md) for details about the project
