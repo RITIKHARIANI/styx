@@ -6,14 +6,17 @@ Users on a LAN can send messages and files to each other and set up temporary fi
 This will be facilitated by other users who run temporary servers on their device, whom we shall call servers for now, and users who set up a long time server as the backbone of the network, whom we shall call providers for now.
 
 ## Pages in the website
-1. Login (For the providers and servers)
-2. Dashboard-1 (Provider)
-3. Dashboard-2 (Server)
-4. Hosting manager (Server)
-5. Sharing interface (Server and user)
-6. Global messaging page
-7. Usage documentation and bug reports
-8. _Add more if you want to_
+1. Home page - details on file sharing
+2. Login (For the providers and servers)
+3. Dashboard-1 (Provider)
+4. Dashboard-2 (Server)
+5. Hosting manager (Server)
+6. Sharing interface (Server and user)
+7. Global messaging page
+8. Usage documentation and bug reports
+9. Contact us page - for any difficulty faced or not
+10. Registration/sign up page
+11. _Add more if you want to_
 
 ## Advantages of using styx 
 * It is fast, much faster than sending files over the internet.  
