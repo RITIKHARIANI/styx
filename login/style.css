@@ -1,0 +1,72 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background: #2c2c54;
+}
+
+h1
+{
+	color: #f1c40f;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.datin
+{
+	width: 20%;
+	padding: 30px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: #191919;
+	text-align: center;
+}
+
+.datin input[type="text"], .datin input[type="password"]
+{
+	border: 0;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #f1c40f;
+	padding: 14px 10px;
+	width: 60%;
+	outline: none;
+	color: white;
+	border-radius: 20px;
+	transition: 0.25s;
+}
+
+.datin input[type="text"]:focus, .datin input[type="password"]:focus
+{
+	width: 80%;
+	border-color: #e67e22;
+	font-weight: bold;
+}
+
+.datin input[type="submit"]
+{
+	border: 0;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #e67e22;
+	padding: 14px 40px;
+	/*width: 60%;*/
+	outline: none;
+	color: white;
+	border-radius: 20px;
+	transition: 0.25s;
+	cursor: pointer;
+}
+
+.datin input[type="submit"]:hover
+{
+	background: #e67e22;
+	color: black;
+}
