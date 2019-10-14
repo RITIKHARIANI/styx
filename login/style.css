@@ -3,7 +3,7 @@ body
 	margin: 0;
 	padding: 0;
 	font-family: sans-serif;
-	background: #2c2c54;
+	background: #676688;
 }
 
 h1
@@ -22,6 +22,8 @@ h1
 	left: 50%;
 	transform: translate(-50%,-50%);
 	background: #191919;
+	border-radius: 10px;
+	/*display: none;*/
 	text-align: center;
 }
 
@@ -48,12 +50,13 @@ h1
 	font-weight: bold;
 }
 
-.datin input[type="submit"]
+.datin input[type="submit"], .datin input[type="button"]
 {
 	border: 0;
 	background: none;
 	display: block;
-	margin: 20px auto;
+	margin: 10px auto;
+	width: 50%;
 	text-align: center;
 	border: 2px solid #e67e22;
 	padding: 14px 40px;
@@ -61,11 +64,11 @@ h1
 	outline: none;
 	color: white;
 	border-radius: 20px;
-	transition: 0.25s;
+	transition: 0.5s;
 	cursor: pointer;
 }
 
-.datin input[type="submit"]:hover
+.datin input[type="submit"]:hover, .datin input[type="button"]:hover
 {
 	background: #e67e22;
 	color: black;
