@@ -1,18 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Styx-login</title>
-	<meta charset="utf-8">
-	<!-- <meta http-equiv="refresh" content="15">	This makes the webpage reload every 15 seconds. Remove this for production -->
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <title>Styx-Login</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="logins.js"></script>
 </head>
 <body>
-		<form class="datin" action="/" method="POST">
-			<h1> Give me your data! </h1>
-			<input type="text" name="uname" placeholder="Enter Username">
-			<input type="password" name="pwd" placeholder="Password">
-			<input type="submit" name="subs" value="Submit">
-			<input type="button" name="cans" value="Cancel">
-		</form>
+    <div class="login-box" id="lgbx1">
+        <h1>Login</h1>
+        <div class="texts">
+            <input type="text" name="logn" placeholder="username" id="uname">
+        </div>
+        <div class="texts">
+            <input type="password" name="pasd" placeholder="password" id="passwd">
+        </div>
+        <input class="btn" type="submit" name="subs" value="GO!" onclick="execsub()">
+        <input class="btn" type="submit" name="subs" value="Register" onclick="register()">
+        <br><input type="checkbox" name="rems" value="remeber" id="ckset"> <span class="checks">Remember me </span><br>
+    </div>
+    <div class="register" id="rgbx1">
+        <h1>Register</h1>
+        <div class="texts">
+            <input type="text" name="logn" placeholder="username">
+        </div>
+        <div class="texts">
+            <input type="password" name="pasd" placeholder="password">
+        </div>
+        <div class="texts">
+            <input type="password" name="pasd" placeholder="confirm password">
+        </div>
+        <input class="btn" type="submit" name="subs" value="GO!" onclick="alert('lmao')">
+        <input class="btn" type="submit" name="subs" value="Register">
+        <br><input type="checkbox" name="rems" value="remeber" id="ckset"> Remember me <br>
+    </div>
 </body>
 </html>

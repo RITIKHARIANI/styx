@@ -14,9 +14,11 @@ body
 .nav-link, .navbar-brand
 {
 	color: #1f2833;
+	padding: 15px;
 }
+
 .nav-link{ margin-right: 1em !important;}
-.nav-link:hover, .navbar-brand:hover{ background: #1f2833; color: #f97916; }
+.nav-link:hover, .navbar-brand:hover{ background: #1f2833; color: #f97916;}
 .navbar-collapse{ justify-content: flex-end; }
 .navbar-toggler{  background:#fff !important;}
 
@@ -37,7 +39,7 @@ body
 	top: 0;
 	left: 0;
 	background: #0b0c10;
-	opacity: 0.95;
+	opacity: 0.85;
 }
 
 .description
