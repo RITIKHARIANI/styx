@@ -10,18 +10,19 @@ body
 
 .login-box, .register
 {
-  width: 40%;
+  width: 30%;
   position: absolute;
   text-align: center;
   top: 50%;
   left: 50%;
+  border-radius: 10px;
   transform: translate(-50%,-50%);
   color: #f97916;
   background: #1f2833;
-  opacity: 0.9;
+  opacity: 1.0;
 }
 
-.login-box h1
+.login-box h1, .register h1
 {
   /*float: left;*/
   font-size: 40px;
