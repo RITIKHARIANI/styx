@@ -11,5 +11,11 @@ We have the following branches(add as per need):
 * backend.test for the backend.  
 * documentation.test for the docs. 
 
+Project work:  
+**Follow this for optimal working with other developers**
+* Check out all the issues, make new ones, edit them, anything which helps us.  
+* Check out the project, make additions.  
+* Message any of the core contributors to be added.
+
 Usage
 > This project is open-source and can be modified and used as allowed by the [license](https://github.com/rehanvipin/styx/blob/master/LICENSE)
