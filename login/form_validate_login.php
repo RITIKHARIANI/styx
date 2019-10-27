@@ -9,6 +9,10 @@
             $usernameErr="Name is required";
         else
             $username = test_input($_POST["name"]);
+            if (!preg_match("/^[a-zA-Z ]*$/",$name)) 
+            {
+                $usernameErr = "Only letters and white space allowed";
+            }
         
         if(empty($_POST["password"]))
             $password="Password Required";
