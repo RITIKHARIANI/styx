@@ -110,3 +110,14 @@ body
 	position: relative;
 
 }
+
+.btn-fileshare {
+	height: 30vh;
+	width: 30vh;
+	border-radius: 50%;
+	font-size: 5vh;
+}
+
+#shareProgress {
+	padding: 65px;
+}
