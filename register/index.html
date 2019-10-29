@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Styx-Login</title>
+    <title>Styx-Register</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript" src="logins.js"></script>
 </head>
 <body>
     <div class="login-box" id="lgbx1">
-        <h1>Login</h1>
+        <h1>Register</h1>
         <!--form login over here-->
         <form method="post" action="form_validate_login.php">
         <div class="texts">
             <input type="text" name="username" placeholder="Enter Username" id="uname">
         </div>
         <div class="texts">
-            <input type="password" name="password" placeholder="Enter password" id="passwd">
+            <input type="email" name="username" placeholder="Enter Email" id="uemail">
         </div>
-        <input type="checkbox" name="rems" value="remeber" id="ckset"> <span class="checks">Remember me </span><br>
-        <input class="btn" type="submit" name="subs" value="Login" onclick="execsub()">
-        <br><br>
-        <a href="../register/index.html" class="btn" style="text-decoration: none;">Don't have an account? <b>Sign Up</b><a>
+        <div class="texts">
+            <input type="password" name="password" placeholder="Enter Password" id="upasswd">
+        </div>
+        <div class="texts">
+            <input type="number" name="password" placeholder="Enter Phone Number" id="uphno">
+        </div>
+        <div class="texts">
+            <input type="email" name="password" placeholder="Enter Recovery Mail" id="uphno">
+        </div>
+        <div class="texts">
+          <p>Upload Photo</p>
+          <input type="file" name="pic" accept="image/*" class='btn'>
+        </div>
 
+        <input class="btn" type="submit" name="subs" value="Register" >
         </form>
     </div>
     <div class="register" id="rgbx1">
