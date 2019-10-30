@@ -148,7 +148,8 @@ body
     z-index: 999;
     background: #f15025;
     color: #fff;
-    transition: all 0.3s;
+	transition: all 0.3s;
+}
 
 .carousel
 {
