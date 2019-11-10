@@ -3,7 +3,7 @@
     $usernameErr = $passwordErr = "";
     $username = $password ="";
 
-    function test__input($data)
+    function test_input($data)
     {
         $data = trim($data);
         $data = stripslashes($data);
@@ -16,7 +16,7 @@
             $usernameErr="Name is required";
         else
             $username = test_input($_POST["name"]);
-            if (!preg_match("/^[a-zA-Z ]*$/",$name)) 
+            if (!preg_match("/^[a-zA-Z ]*$/",$username)) 
             {
                 $usernameErr = "Only letters and white space allowed";
             }
