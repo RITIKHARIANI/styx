@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="local.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="../js/jquery.min.js"></script>
@@ -16,25 +17,27 @@
     </div>
     <form action="upload.php" method="POST" enctype="multipart/form-data">
     	<div class="col-md-4 offset-5">
-        	<input type="file" name="fupload" id="addfile">
+        	<input type="file" name="fupload" id="fupload">
         </div>
-    </form>
+    <!-- </form> -->
 	<div class="row">
-        <div class="col-md-4 offset-3">
-            <button type="button" class="btn btn-lg btn-primary btn-fileshare send" onclick="sendFile()">SEND</button>
+		<!-- <form> -->
+        <div class="col-md-4 offset-3" id="sender">
+            <input type="submit" name="submit" class="btn btn-lg btn-primary btn-fileshare send" value="SEND FILES">
         </div>
-        <div class="col-md-4">
-            <button type="button" class="btn btn-lg btn-info btn-fileshare receive" onclick="receiveFile()">RECEIVE</button>
+        <div class="col-md-4" id="receiver">
+            <input type="submit" class="btn btn-lg btn-info btn-fileshare receive" value="RECEIVE">
         </div>
     </div>
+    </form>
     <!-- Progress Bar -->
-    <div class="row" id="shareProgress">
+<!--     <div class="row" id="shareProgress">
         <div class="col-md-10 offset-1">
             <div class="progress">
                 <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Footer -->
 	<nav class="navbar fixed-bottom navbar-expand-lg">
             <a class="navbar-brand" href="/styx">Home</a>
@@ -52,6 +55,6 @@
             </div> 
         </nav>
         <!-- File Share Logic -->
-        <script type="text/javascript" src='../js/fileShare.js'></script>
+        <!-- <script type="text/javascript" src='../js/fileShare.js'></script> -->
 	</body>
 </html>
