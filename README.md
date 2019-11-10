@@ -17,5 +17,10 @@ Project work:
 * Check out the project, make additions.  
 * Message any of the core contributors to be added.
 
+Major Contributors:
+* Ritik Hariani: https://github.com/RITIKHARIANI
+* Romaanchan Skanda: https://github.com/Prix4Houdini
+* Qoyyuum: https://github.com/Qoyyuum
+
 Usage
 > This project is open-source and can be modified and used as allowed by the [license](https://github.com/rehanvipin/styx/blob/master/LICENSE)
