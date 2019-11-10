@@ -14,6 +14,11 @@
 	<div class="jumbotron text-center" style="background-color: black; color:white">
         <h1><b>FILE SHARING</b></h1>
     </div>
+    <form action="upload.php" method="POST" enctype="multipart/form-data">
+    	<div class="col-md-4 offset-5">
+        	<input type="file" name="fupload" id="addfile">
+        </div>
+    </form>
 	<div class="row">
         <div class="col-md-4 offset-3">
             <button type="button" class="btn btn-lg btn-primary btn-fileshare send" onclick="sendFile()">SEND</button>
@@ -32,17 +37,17 @@
     </div>
     <!-- Footer -->
 	<nav class="navbar fixed-bottom navbar-expand-lg">
-            <a class="navbar-brand" href="">Home</a>
+            <a class="navbar-brand" href="/styx">Home</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-4">
-                    <li class="nav-item"><a class="nav-link" data-value="about" href="#new_about">About</a></li> 
-                    <li class="nav-item"><a class="nav-link" data-value="profile" href="profile/">Profile</a></li>
-                    <li class="nav-item"><a class="nav-link" data-value="login" href="login/index.html">Login</a></li>
-                    <li class="nav-item"><a class="nav-link" data-value="docs" href="docs/build/html/index.html">Docs</a></li>
-                    <li class="nav-item"><a class="nav-link" data-value="about" href="share/">Share</a></li>
+                    <li class="nav-item"><a class="nav-link" data-value="about" href="/styx/about">About</a></li> 
+                    <li class="nav-item"><a class="nav-link" data-value="profile" href="/styx/fileshosted">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" data-value="login" href="/styx/login/">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" data-value="docs" href="/styx/docs/build/html/">Docs</a></li>
+                    <li class="nav-item"><a class="nav-link" data-value="about" href="./">Share</a></li>
                 </ul>
             </div> 
         </nav>
