@@ -8,6 +8,7 @@ __pycache__/
 
 # Distribution / packaging
 *.bat
+/backend/learn
 .Python
 tornado/
 build/
