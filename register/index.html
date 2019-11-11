@@ -10,7 +10,7 @@
     <div class="login-box" id="lgbx1">
         <h1>Register</h1>
         <!--form login over here-->
-        <form method="post" action="form_validate_login.php">
+        <form method="POST" action="/" enctype="multipart/form-data">
         <div class="texts">
             <input type="text" name="username" placeholder="Enter Username" id="uname">
         </div>
@@ -34,19 +34,6 @@
         <input class="btn" type="submit" name="subs" value="Register" >
         </form>
     </div>
-    <div class="register" id="rgbx1">
-        <h1>Register</h1>
-        <div class="texts">
-            <input type="text" name="logn" placeholder="username">
-        </div>
-        <div class="texts">
-            <input type="password" name="pasd" placeholder="password">
-        </div>
-        <div class="texts">
-            <input type="password" name="pasd" placeholder="confirm password">
-        </div>
-        <input class="btn" type="submit" name="subs" value="Sign up!" onclick="alert('lmao')">
-        <input class="btn" type="submit" name="subs" value="Login" onclick="logsin()">
-    </div>
+
 </body>
 </html>
