@@ -163,27 +163,25 @@ body
 	padding: 65px;
 }
 
-body{
-	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0)), url(../images/Home\ wallpapers/techandall_wallpaper_1.jpg);
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	height:100vh;
-	
+.abbody
+{
+	background-image: url(../images/dark_wood/dark_wood_@2X.png);
+	background-repeat: repeat;
 }
 
 .content h1
 {
-	color: #f2f2f2;
+	color: #ffff1a;
 	text-align: center;
-	text-justify: auto;
+	text-justify: distribute-all-lines;
 	font-style: italic;
 	
 }
+
 
 .content p
 {
 	color: #f2f2f2;
 	font-size: 24px;
-	text-justify: auto;
+	text-justify: distribute-all-lines;
 }
