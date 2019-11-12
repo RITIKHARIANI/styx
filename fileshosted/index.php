@@ -12,47 +12,44 @@
 	
 	<script type="text/javascript" src="../js/popper.min.js"></script>
 	<script type="text/javascript" src='../js/main.js'></script>
-	<!-- <style>
-		/* Make the image fully responsive */
-		.carousel-inner img {
-			width: 100%;
-			height: 100%;
-		}
-		</style> -->
+
 </head>
+<button id="goback"><a href="../" id="homer">Home</a></button>
 <body>
 	<!--Center Nav Bar-->
-	<nav class="navbar justify-content-center">
-			<a class="nav-link active" href="#">Machine Info</a>
-			<a class="nav-link" href="#">Info</a>
-			<a class="nav-link" href="#">Info</a>
+	<nav class="navbar justify-content-center" id="mid">
+			<span class="info">: <?php echo $_SERVER['SERVER_NAME'] ?> :</span>
+			<span class="info">: Styx User's home : </span>
+			<span class="info">: <?php echo $_SERVER['REQUEST_URI'] ?> :</span>
 	</nav>
 	<!-- Left Side Bar-->
 	<div class="wrapper">
 		<!-- Sidebar -->
 		<nav id="sidebarleft">
-			<div class="sidebar-header">
+			<div class="sidebar-header" id="leftinfo">
 				<h3 class="text-center">Functionality</h3>
-			</div>
-			<ul class="nav flex-column">
-					<li class="nav-item">
-					  <a class="nav-link active" href="#">Active</a>
-					</li>
-					<li class="nav-item">
-					  <a class="nav-link" href="#">Link</a>
-					</li>
-					<li class="nav-item">
-					  <a class="nav-link" href="#">Link</a>
-					</li>
-					<li class="nav-item">
-					  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-					</li>
-				  </ul>	
+			<ul class="nav flex-column" id="listbuto">
+				<li class="nav-item">
+					<button class="wicker">ADD FILES</button>
+				</li>
+				<li class="nav-item">
+					<button class="wicker">REMOVE FILES</button>
+				</li>
+				<li class="nav-item">
+					<button class="wicker">STOP</button>
+				</li>
+				<li class="nav-item">
+					<button class="wicker">PAUSE</button>
+				</li>								
+			</ul>
+			</div>	
 		</nav>
 	</div>
 	<div class="middle">
 		<nav id="midbar">
+			<br>
 		<h1>Files in storage</h1>
+		<br><br><br>
 		<ul>
 			<?php
 				$path = '../share/storage/';
@@ -67,13 +64,13 @@
 	<div class="wrapper">
 		<!-- Sidebar -->
 		<nav id="sidebarright">
-			<div class="sidebar-header">
-				<h3 class="text-center">List of Users Online</h3>
-			</div>
-			<div>
-				<p class="text-center"> User 1</p>
-				<p class="text-center"> User 2</p>
-				<p class="text-center"> User 3</p>
+			<div class="sidebar-header" id="rightinfo">
+				<h3 class="text-center">Users Online</h3>
+			<!-- </div>
+			<div> -->
+				<p class="text-center"> Rehan</p>
+				<p class="text-center"> Ritik</p>
+				<p class="text-center"> Romaanchan</p>
 			</div>
 	
 		</nav>
