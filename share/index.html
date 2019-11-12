@@ -23,13 +23,14 @@
 	<div class="row">
 		<!-- <form> -->
         <div class="col-md-4 offset-3" id="sender">
-            <input type="submit" name="submit" class="btn btn-lg btn-primary btn-fileshare send" value="SEND FILES">
+            <input type="submit" name="submit" class="btn btn-lg btn-primary btn-fileshare send" value="SEND FILES" id="sends">
         </div>
         <div class="col-md-4" id="receiver">
-            <input type="submit" class="btn btn-lg btn-info btn-fileshare receive" value="RECEIVE">
+            <input type="button" class="btn btn-lg btn-info btn-fileshare receive" value="RECEIVE" id="recr">
         </div>
     </div>
     </form>
+    <progress class="col-md-2 offset-3" value="10" max="100" id="progr"></progress> 
     <!-- Progress Bar -->
 <!--     <div class="row" id="shareProgress">
         <div class="col-md-10 offset-1">
@@ -56,5 +57,6 @@
         </nav>
         <!-- File Share Logic -->
         <!-- <script type="text/javascript" src='../js/fileShare.js'></script> -->
+        <script type="text/javascript" src="dynamic.js"></script>
 	</body>
 </html>

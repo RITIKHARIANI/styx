@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="./styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script type="text/javascript" src="../js/jquery.min.js"></script>
 	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
@@ -20,15 +21,12 @@
 		</style> -->
 </head>
 <body>
-
 	<!--Center Nav Bar-->
-
 	<nav class="navbar justify-content-center">
 			<a class="nav-link active" href="#">Machine Info</a>
 			<a class="nav-link" href="#">Info</a>
 			<a class="nav-link" href="#">Info</a>
-		  </nav>
-
+	</nav>
 	<!-- Left Side Bar-->
 	<div class="wrapper">
 		<!-- Sidebar -->
@@ -52,8 +50,19 @@
 				  </ul>	
 		</nav>
 	</div>
-
-
+	<div class="middle">
+		<nav id="midbar">
+		<h1>Files in storage</h1>
+		<ul>
+			<?php
+				$path = '../share/storage/';
+				$files = array_diff(scandir($path), array('.', '..'));
+				foreach ($files as $file) {
+					echo "<li>$file</li>";
+				}
+			?>
+		</ul>
+		</nav>
 	<!-- Right SideBar-->
 	<div class="wrapper">
 		<!-- Sidebar -->
@@ -69,6 +78,5 @@
 	
 		</nav>
 	</div>
-
 	</body>
 </html>
