@@ -27,8 +27,35 @@
             $password = test_input($_POST["password"]);
         
     }
-
     
+    session_start();
+    
+    $con = mysqli_connect("localhost","root");
+    
+    if($con)
+    {
+        echo "connection successful";
+    }else{
+        echo "no connection";
+    }
 
+    mysqli_select_db($con,'project');
 
+    $user = $_POST['username'];
+    $pass = $_POST['password'];
+    
+    $q = " select * from test where username = '$user' && password = '$pass' ";
+    $result = mysqli_query($con,$q);
+    $num = mysqli_num_rows($result);
+    
+    if($num == 0)
+    {
+        echo("Invalid User");
+        header("location:index.html");
+    }
+    if($num == 1)
+    {
+        echo "Login Successful";
+        header("location:../index.html");
+    }
 ?>

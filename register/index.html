@@ -10,21 +10,21 @@
     <div class="login-box" id="lgbx1">
         <h1>Register</h1>
         <!--form login over here-->
-        <form method="POST" action="/" enctype="multipart/form-data">
+        <form method="POST" action="./insert.php" enctype="multipart/form-data">
         <div class="texts">
-            <input type="text" name="username" placeholder="Enter Username" id="uname">
+            <input type="text" name="username" placeholder="Enter Username" id="uname" required>
         </div>
         <div class="texts">
-            <input type="email" name="username" placeholder="Enter Email" id="uemail">
+            <input type="email" name="mail" placeholder="Enter Email" id="uemail" required>
         </div>
         <div class="texts">
-            <input type="password" name="password" placeholder="Enter Password" id="upasswd">
+            <input type="password" name="password" placeholder="Enter Password" id="upasswd" required>
         </div>
         <div class="texts">
-            <input type="number" name="password" placeholder="Enter Phone Number" id="uphno">
+            <input type="number" name="phone" placeholder="Enter Phone Number" id="uphno" required>
         </div>
         <div class="texts">
-            <input type="email" name="password" placeholder="Enter Recovery Mail" id="uphno">
+            <input type="email" name="recmail" placeholder="Enter Recovery Mail" id="uphno" required>
         </div>
         <div class="texts">
           <p>Upload Photo</p>
