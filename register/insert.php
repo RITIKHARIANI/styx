@@ -18,7 +18,7 @@
     $phone = $_POST['phone'];
     $recmail = $_POST['recmail'];
 
-    $q = " select * from test where email = '$mail' ";
+    $q = " select * from test where username = '$user' ";
     $result = mysqli_query($con,$q);
     $num = mysqli_num_rows($result);
     if($num == 1)
