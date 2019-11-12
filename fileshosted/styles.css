@@ -1,0 +1,16 @@
+html{
+	height: 100%;
+}
+
+body{
+	height: 100%;
+}
+
+#midbar {
+    position: fixed;
+    left: 40%;
+    height: 100vh;
+    z-index: 999;
+    color: black;
+    transition: all 0.3s;
+}
