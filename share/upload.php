@@ -1,10 +1,13 @@
 <?php
-$target_dir = "./storage/";
+if(isset($_COOKIE["username"]))
+	$target_dir = "./storage/".$_COOKIE["username"]."/";
+else
+	$target_dir = "./storage/";
 $target_file = $target_dir . basename($_FILES["fupload"]["name"]);
 $uploadOk = 1;
 $FileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
 
-echo $target_file, "<br>";
+echo "Uploading: ", $target_file, "<br>";
 
 if (file_exists($target_file)) {
 	echo "Already there<br>";

@@ -15,11 +15,18 @@
 
 </head>
 <button id="goback"><a href="../" id="homer">Home</a></button>
+<button id="logsout">Logout</button>
 <body>
 	<!--Center Nav Bar-->
 	<nav class="navbar justify-content-center" id="mid">
 			<span class="info">: <?php echo $_SERVER['SERVER_NAME'] ?> :</span>
-			<span class="info">: Styx User's home : </span>
+			<span class="info"><?php
+			if(isset($_COOKIE["username"]))
+				echo $_COOKIE["username"], "'s home";
+			else
+				echo "Styx public home";
+			?>
+			</span>
 			<span class="info">: <?php echo $_SERVER['REQUEST_URI'] ?> :</span>
 	</nav>
 	<!-- Left Side Bar-->
@@ -53,6 +60,8 @@
 		<ul>
 			<?php
 				$path = '../share/storage/';
+				if(isset($_COOKIE["username"]))
+					$path = '../share/storage/'.$_COOKIE["username"];
 				$files = array_diff(scandir($path), array('.', '..'));
 				foreach ($files as $file) {
 					echo "<li>$file</li>";
@@ -76,4 +85,5 @@
 		</nav>
 	</div>
 	</body>
+	<script type="text/javascript" src="dyno.js"></script>
 </html>
