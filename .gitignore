@@ -9,6 +9,8 @@ __pycache__/
 # Distribution / packaging
 *.bat
 /backend/learn
+local_db/
+test_local/
 /share/storage
 .Python
 tornado/
