@@ -5,7 +5,23 @@
 	float: left;
 	width: 100%;
 }
+.carousel
+{
+	top:50px;
+	position: relative;
+	width: 100%;
+}
 
+.btn-fileshare {
+	height: 30vh;
+	width: 30vh;
+	border-radius: 50%;
+	font-size: 5vh;
+}
+
+#shareProgress {
+	padding: 65px;
+}
 body
 {
 	padding: 0;
@@ -29,6 +45,9 @@ body
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
+	background-repeat: repeat !important;
+	width:100%;
+	height:100%;
 }
 
 .overlay
@@ -102,4 +121,70 @@ body
 .rest
 {
 	display: none;
+}
+
+/* Added Styles for hosted files */
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+#sidebarleft {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: #f15025;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+
+#sidebarright {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 999;
+    background: #f15025;
+    color: #fff;
+	transition: all 0.3s;
+}
+
+
+.btn-fileshare {
+	height: 30vh;
+	width: 30vh;
+	border-radius: 50%;
+	font-size: 5vh;
+}
+
+#shareProgress {
+	padding: 65px;
+}
+
+.abbody
+{
+	background-image: url(../images/dark_wood/dark_wood_@2X.png);
+	background-repeat: repeat;
+}
+
+.content h1
+{
+	color: #ffff1a;
+	text-align: center;
+	text-justify: distribute-all-lines;
+	font-style: italic;
+	
+}
+
+
+.content p
+{
+	color: #f2f2f2;
+	font-size: 24px;
+	text-justify: distribute-all-lines;
 }

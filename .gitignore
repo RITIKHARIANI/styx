@@ -8,9 +8,14 @@ __pycache__/
 
 # Distribution / packaging
 *.bat
+/local_db
+/test_local
+/backend/learn
+local_db/
+test_local/
+/share/storage
 .Python
 tornado/
-build/
 develop-eggs/
 dist/
 downloads/
