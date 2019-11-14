@@ -1,0 +1,16 @@
+#sender{
+	position: relative;
+	float: left;
+	left: 25%;
+	margin: 0;
+}
+
+#receiver{
+	position: relative;
+	float: right;
+	left: 25%;
+}
+
+#progr{
+	display: none;
+}

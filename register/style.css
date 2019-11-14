@@ -16,7 +16,6 @@ body
   top: 50%;
   left: 50%;
   border-radius: 10px;
-  height: 500px;
   transform: translate(-50%,-50%);
   color: #f97916;
   background: #1f2833;
