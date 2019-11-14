@@ -15,7 +15,7 @@
 
 </head>
 <button id="goback"><a href="../" id="homer">Home</a></button>
-<button id="logsout">Logout</button>
+<button id="logsout"><a href="./logout.php" >Logout</a></button>
 <body>
 	<!--Center Nav Bar-->
 	<nav class="navbar justify-content-center" id="mid">
