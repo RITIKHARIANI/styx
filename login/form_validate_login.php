@@ -30,7 +30,7 @@
     
     session_start();
     
-    $con = mysqli_connect("sql12.freesqldatabase.com","sql12311787","s6SXUShK2r");
+    $con = mysqli_connect("localhost","styx","webtech123");
     
     if($con)
     {
@@ -39,12 +39,12 @@
         echo "no connection";
     }
 
-    mysqli_select_db($con,'sql12311787');
+    mysqli_select_db($con,'project');
 
     $user = $_POST['username'];
     $pass = $_POST['password'];
     
-    $q = " select * from Accounts where Username = '$user' && Password = '$pass' ";
+    $q = " select * from test where username = '$user' && password = '$pass' ";
     $result = mysqli_query($con,$q);
     $num = mysqli_num_rows($result);
 
