@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,7 +11,7 @@
     <div class="login-box" id="lgbx1">
         <h1>Register</h1>
         <!--form login over here-->
-        <form method="POST" action="./insert.php" enctype="multipart/form-data">
+        <form method="POST" action="insert.php" enctype="multipart/form-data">
         <div class="texts">
             <input type="text" name="username" placeholder="Enter Username" id="uname" required>
         </div>

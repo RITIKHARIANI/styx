@@ -53,12 +53,11 @@
       $num = mysqli_num_rows($result);
       if($num == 0)
       {
-        echo("Invalid User");
         $message = "Invalid Username or Password";
-        
-           
-        //sleep(3);
-        header("location:index.html");
+        echo "<script type='text/javascript'>
+                alert('$message');
+                window.location.href='index.php';
+                </script>";
       }
       if($num == 1)
       {
