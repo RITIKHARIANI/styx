@@ -60,7 +60,6 @@
             else {
                 document.getElementById("send").disabled = false;
             }
-            }
             document.getElementById('user').innerHTML=data;
         }
         );
