@@ -86,7 +86,7 @@
 
         <!--end of message container -->
     </div>
-    <form method="POST" id="message-form">
+    <form method="post" id="message-form">
     <textarea id="message_text" placeholder="Enter your message" class="textarea"></textarea>
     </form>
 
@@ -96,20 +96,20 @@
 <script src="../jquery/jquery-3.4.1.min.js"></script>
 
 <script>
-    $(document).ready(function(event){
+    $("document").ready(function(event){
 
-        $("#right-col-container").on('submit','#message-form',function(){
+        $("#message-form").on('submit',function(){
             var message_text=$('#message_text').val();
-        
+            
         //send the data to send to sending_process.php
-        $.post("sending_process.php?user=<?php echo $_GET['user']; ?>",
+        $.post("sending_process.php?user=<?php echo $_GET['user'];?>",
         {
-            text:message_text,
+            text: message_text,
         },
         //in return we get 
-        function(data,status){
+        function(data,status)
+        {
             //remove text from message_text
-
             $("#message_text").val("");
 
             //now adding data to message container
@@ -118,11 +118,10 @@
         );
     });
         //if any button is clicked inside right container
-        $("#right-col-container").keypress(function(e){
+        $("#message_text").keypress(function(e){
             
         if(e.keyCode==13 && !e.shiftKey){
             //enter is clicked without shift key
-            
             $("#message-form").submit();
         }
         
