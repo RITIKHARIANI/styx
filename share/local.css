@@ -5,6 +5,22 @@
 	margin: 0;
 }
 
+#sends, #recr{
+	font-style: oblique;
+	font-weight: bold;
+}
+
+#sends{
+	background: #f46036;
+	color: black;
+	border-color: #f46036;
+}
+
+#recr{
+	background: #477998;
+	color: white;
+}
+
 #receiver{
 	position: relative;
 	float: right;
@@ -14,3 +30,17 @@
 #progr{
 	display: none;
 }
+
+body{
+	background: #222;
+	color: white;
+	width: 99%; 
+}
+
+html{
+	width: 99%;
+}
+
+/*.box_dragndrop{
+	display: none;
+}*/

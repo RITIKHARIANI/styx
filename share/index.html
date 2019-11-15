@@ -12,12 +12,13 @@
 	<script type="text/javascript" src="../js/popper.min.js"></script>
 </head>
 <body>
-	<div class="jumbotron text-center" style="background-color: black; color:white">
-        <h1><b>FILE SHARING</b></h1>
+	<div class="jumbotron text-center" style="background-color: #222; color:orange; width:100">
+        <h1 style="font-style: oblique;"><b>FILE SHARING</b></h1>
     </div>
     <form action="upload.php" method="POST" enctype="multipart/form-data">
-    	<div class="col-md-4 offset-5">
-        	<input type="file" name="fupload" id="fupload">
+    	<div class="col-md-4 offset-5 box_input" id="drgop">
+        	<input type="file" name="fupload" id="fupload" class="box_file">
+            <label for="file"><strong>Choose a file or </strong><span class="box_dragndrop">drop it here</span></label>
         </div>
     <!-- </form> -->
 	<div class="row">
@@ -55,3 +56,4 @@
         <script type="text/javascript" src="dynamic.js"></script>
 	</body>
 </html>
+
