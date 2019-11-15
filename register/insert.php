@@ -1,6 +1,6 @@
 <?php
     session_start();
-    $con = mysqli_connect("localhost","root");
+    $con = mysqli_connect("localhost","styx","webtech123");
 
     if($con){
         echo "Connection Successful";
@@ -35,7 +35,8 @@
         {
             $message = "Registration Successful<br>Redirecting to login Page";
             echo "<script type='text/javascript'>alert('$message');</script>";
-            sleep(3);
+            mkdir('../share/storage/'.$user);
+            sleep(1);
             header("location:../login/index.html");
         }else{
             $message = "Registration UnSuccessful<br>Servers Might be down";

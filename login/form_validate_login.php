@@ -30,7 +30,7 @@
     
     session_start();
     
-    $con = mysqli_connect("localhost","root");
+    $con = mysqli_connect("localhost","styx","webtech123");
     
     if($con)
     {
@@ -47,15 +47,22 @@
     $q = " select * from test where username = '$user' && password = '$pass' ";
     $result = mysqli_query($con,$q);
     $num = mysqli_num_rows($result);
+
+     echo "<script>alert('number',$num,'v')</script>";
     
     if($num == 0)
     {
         echo("Invalid User");
         header("location:index.html");
     }
-    if($num == 1)
+    else
     {
         echo "Login Successful";
         header("location:../index.html");
+        $cookie_name = "username";
+        $cookie_value = $user;
+        $path = "/";
+        $domain = $_SERVER['SERVER_NAME'];
+        setcookie($cookie_name, $cookie_value, time()+(60*60*2),$path,$domain);
     }
 ?>

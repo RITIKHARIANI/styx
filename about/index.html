@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="../js/jquery.min.js"></script>
     <script type="text/javascript" src="../js/bootstrap.min.js"></script>
@@ -16,27 +17,33 @@
 
 <body style="font-family: 'Roboto', sans-serif; background-color: orange;">
     <div class="jumbotron text-center" style="background-color: black; color:orange">
+        <button id="goback"><a href="../" id="homer">&lt Home</a></button>
         <h1><b>About Us</b></h1>
+        <!-- <h4>&lt Creators &gt</h4> -->
     </div>
     <div class="row text-center justify-content-center" style="margin: 75px;">
         <div class="col-sm-3">
-            <div class="card" style="border-radius: 50%;">
+            <div class="card" style="border-radius: 50%;border-color: red;">
                 <div class="card-img-top">
-                    <img src="../images/default_pic.png" style="object-fit: cover; height: 100%; width: 100%; border-radius:50%;">
+                    <img src="../images/cat_red.jpg" style="object-fit: cover; height: 100%; width: 100%; border-radius:50%; border-color: red;">
                 </div>
                 <div class="card-img-overlay" onmouseover="display_func(this);" onmouseleave="undisplay_func(this);"
-                    style="background-color: rgba(0,0,0,0.75); color: white; opacity: 0;">
+                    style="background-color: rgba(0,0,0,0.75); color: white; opacity: 0; border-radius: 50%; border-color: red" >
                     <div class="card-title">
                         <h4>
                             <b>Rehan</b>
                         </h4>
-                        <div class="card-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Pretium nibh ipsum consequat nisl vel pretium lectus.
+                        <div class="card-body" >
+                            <p>Hi there! How are you doing?
+                                This is me.
+                                Welcome to our site.
+                                Look here.<br>
+                                Look there.<br>
+                                Explore!
                             </p>
                             <button type="button" class="btn btn-primary" data-toggle="modal"
                                 data-target="#Rehan_modal">
-                                Open modal
+                                Stalk some more
                             </button>
                         </div>
                     </div>
@@ -44,23 +51,27 @@
             </div>
         </div>
         <div class="col-sm-3">
-            <div class="card" style="border-radius: 50%;">
+            <div class="card" style="border-radius: 50%;border-color: green;">
                 <div class="card-img-top">
-                    <img src="../images/default_pic.png" style="object-fit: cover; height: 100%; width: 100%;border-radius: 50%;">
+                    <img src="../images/cat_green.jpg" style="object-fit: cover; height: 100%; width: 100%;border-radius: 50%;">
                 </div>
                 <div class="card-img-overlay" onmouseover="display_func(this);" onmouseleave="undisplay_func(this);"
-                    style="background-color: rgba(0,0,0,0.75); color: white; opacity: 0;">
+                    style="background-color: rgba(0,0,0,0.75); color: white; opacity: 0;border-radius: 50%;">
                     <div class="card-title">
                         <h4>
                             <b>Ritik</b>
                         </h4>
                         <div class="card-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Pretium nibh ipsum consequat nisl vel pretium lectus.
+                            <p>
+                                Wassup!
+                                <br>This is me.
+                                <br>Look around the site.
+                                <br>Chat with other people.
+                                <br>Exchange files around the world.
                             </p>
                             <button type="button" class="btn btn-primary" data-toggle="modal"
                                 data-target="#Ritik_modal">
-                                Open modal
+                                Know some more
                             </button>
                         </div>
                     </div>
@@ -68,22 +79,27 @@
             </div>
         </div>
         <div class="col-sm-3">
-            <div class="card" style="border-radius: 50%;">
+            <div class="card" style="border-radius: 50%;border-color: blue;">
                 <div class="card-img-top">
-                    <img src="../images/default_pic.png" style="object-fit: cover; height: 100%; width: 100%; border-radius:50%">
+                    <img src="../images/cat_blue.jpg" style="object-fit: cover; height: 100%; width: 100%; border-radius:50%">
                 </div>
                 <div class="card-img-overlay" onmouseover="display_func(this);" onmouseleave="undisplay_func(this);"
-                    style="background-color: rgba(0,0,0,0.75); color: white; opacity: 0;">
+                    style="background-color: rgba(0,0,0,0.75); color: white; opacity: 0;border-radius: 50%;">
                     <div class="card-title">
                         <h4>
-                            <b>Skanda</b>
+                            <b>Romaanchan</b>
                         </h4>
                     </div>
                     <div class="card-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Pretium nibh ipsum consequat nisl vel pretium lectus.</p>
+                        <p>
+                            Hello!
+                            <br> This is me
+                            <br> Keep your stay private
+                            <br> Optimize your experience
+                            <br> Enjoy your stay
+                        </p>
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Skanda_modal">
-                            Open modal
+                            Look some more
                         </button>
                     </div>
                 </div>
@@ -196,7 +212,7 @@
         </div>
     </div>
 
-    <div class="jumbotron justify-content-center text-center" style="background-color: black; color: grey;">
+    <div class="jumbotron justify-content-center text-center" style="background-color: black; color: grey; margin: 0">
         <h5> Copyright Styx 2019</h5>
     </div>
 
