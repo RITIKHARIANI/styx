@@ -31,7 +31,7 @@
     session_start();
     
 
-    $con = mysqli_connect("sql12.freesqldatabase.com","sql12311787","s6SXUShK2r");
+    $con = mysqli_connect("databases.000webhost.com","id11595626_root","password");
     
     if($con)
     {
@@ -42,7 +42,7 @@
 
 
 
-      mysqli_select_db($con,'sql12311787');
+      mysqli_select_db($con,'id11595626_styx');
 
       $user = $_POST['username'];
       $pass = $_POST['password'];

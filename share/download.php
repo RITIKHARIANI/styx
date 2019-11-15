@@ -7,8 +7,8 @@ $filename = NULL;
 }
 
 session_start();
-$con = mysqli_connect("localhost", "styx", "webtech123");
-mysqli_select_db($con, "project");
+$con = mysqli_connect("databases.000webhost.com", "id11595626_root", "password");
+mysqli_select_db($con, "id11595626_styx");
 
 if (isset($_GET['fileid'])) {
 	$fileid = $_GET['fileid'];

@@ -1,7 +1,7 @@
 <?php
     session_start();
 
-    $con = mysqli_connect("sql12.freesqldatabase.com","sql12311787","s6SXUShK2r");
+    $con = mysqli_connect("databases.000webhost.com","id11595626_root","password");
 
 
 
@@ -11,7 +11,7 @@
         echo "Unable to connect";
     }
     
-    mysqli_select_db($con,'sql12311787');
+    mysqli_select_db($con,'id11595626_styx');
 
     $user = $_POST['username'];
     $mail = $_POST['mail'];
@@ -27,7 +27,7 @@
         $message = "User Already Exists";
         echo "<script type='text/javascript'>
                 alert('$message');
-                window.location.href = 'index.php';
+                window.location.href = './index.php';
                 </script>";
         //sleep(3);
         //header("location:index.html");
@@ -50,7 +50,7 @@
 
         }else{
             $message = "Registration UnSuccessful<br>Servers Might be down";
-            echo "<script type='text/javascript'>alert('$message');window.location.href=index.php</script>";
+            echo "<script type='text/javascript'>alert('$message');window.location.href=./index.php</script>";
             sleep(3);
             header("location:index.php");
         }
