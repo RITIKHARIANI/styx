@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -22,7 +23,7 @@
             <input type="checkbox" name="rems" value="remeber" id="ckset"> <span class="checks">Remember me </span><br>
             <input class="btn" type="submit" name="subs" value="Login">
             <br><br>
-            <a href="../register/index.html" class="btn" style="text-decoration: none;">Don't have an account? <b>Sign
+            <a href="../register/index.php" class="btn" style="text-decoration: none;">Don't have an account? <b>Sign
                     Up</b><a>
 
         </form>
