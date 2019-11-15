@@ -86,8 +86,7 @@
 
         <!--end of message container -->
     </div>
-    <form method="post" id="message-form">
-    
+    <form method="POST" id="message-form">
     <textarea id="message_text" placeholder="Enter your message" class="textarea"></textarea>
     </form>
 
@@ -97,7 +96,7 @@
 <script src="../jquery/jquery-3.4.1.min.js"></script>
 
 <script>
-    $document.ready(function(event){
+    $(document).ready(function(event){
 
         $("#right-col-container").on('submit','#message-form',function(){
             var message_text=$('#message_text').val();
@@ -120,9 +119,10 @@
     });
         //if any button is clicked inside right container
         $("#right-col-container").keypress(function(e){
-
-        if(e.keyCode ==13 && !e.shiftKey){
+            
+        if(e.keyCode==13 && !e.shiftKey){
             //enter is clicked without shift key
+            
             $("#message-form").submit();
         }
         
