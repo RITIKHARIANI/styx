@@ -1,6 +1,9 @@
 <?php
     session_start();
+
     $con = mysqli_connect("sql12.freesqldatabase.com","sql12311787","s6SXUShK2r");
+
+
 
     if($con){
         echo "Connection Successful";
@@ -37,15 +40,17 @@
         if($result_new)
         {
             $message = "Registration Successful<br>Redirecting to login Page";
+
             echo "<script type='text/javascript'>
                     alert('$message');
                     window.location.href = ../login/index.php;
                     </script>";
             //sleep(3);
             //header("location:../login/index.php");
+
         }else{
             $message = "Registration UnSuccessful<br>Servers Might be down";
-            echo "<script type='text/javascript'>alert('$message');window.loca</script>";
+            echo "<script type='text/javascript'>alert('$message');window.location.href=index.php</script>";
             sleep(3);
             header("location:index.php");
         }

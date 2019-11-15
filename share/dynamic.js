@@ -23,5 +23,27 @@ function getfile(e){
 	}
 	e.stopPropagation()
 }
+
+function getpfile(e){
+	var fileid = prompt("Enter the 6-Character ID you received: ");
+	var resfile = "./download.php?fileid=";
+	if(fileid == null || fileid=="" || fileid.length!=6)
+		alert("Invalid ID");
+	else
+	{
+		resfile = resfile + fileid;
+		window.open(resfile, "_self");
+	}
+	e.stopPropagation();
+}
+
+function choosemethod(e){
+	var privacy = window.confirm('Do you want to use the public share?');
+	if(privacy)
+		getfile(e);
+	else
+		getpfile(e);
+}
+
 holy.addEventListener('click',progress,false);
-cow.addEventListener('click',getfile,false);
+cow.addEventListener('click',choosemethod,false);

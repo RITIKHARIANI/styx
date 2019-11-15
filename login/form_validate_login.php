@@ -32,8 +32,6 @@
     
 
     $con = mysqli_connect("sql12.freesqldatabase.com","sql12311787","s6SXUShK2r");
-
-
     
     if($con)
     {
@@ -41,6 +39,7 @@
     }else{
         echo "no connection";
     }
+
 
 
       mysqli_select_db($con,'sql12311787');
