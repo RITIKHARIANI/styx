@@ -18,7 +18,7 @@ $fileid = strtoupper($fileid);
 
 echo "Uploading: ", $target_file, "<br>";
 echo "Use the ID to share the file: <h1>", $fileid, "</h1><br>";
-$q = "select * from files where fileid = ". $fileid;
+$q = "select * from files where fileid = '$fileid'";
 $result = mysqli_query($con, $q);
 // echo $result;
 $num = mysqli_num_rows($result);
@@ -52,3 +52,5 @@ else{
 	}
 }
 ?>
+<br>
+<a href="./">Go back</a>

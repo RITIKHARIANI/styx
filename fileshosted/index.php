@@ -15,7 +15,7 @@
 
 </head>
 <button id="goback"><a href="../" id="homer">Home</a></button>
-<button id="logsout"><a href="./logout.php" >Logout</a></button>
+<button id="logsout"><a href="./logout.php" id="lgoutbye">Logout</a></button>
 <body>
 	<!--Center Nav Bar-->
 	<nav class="navbar justify-content-center" id="mid">
@@ -44,10 +44,7 @@
 				</li>
 				<li class="nav-item">
 					<button class="wicker">STOP</button>
-				</li>
-				<li class="nav-item">
-					<button class="wicker">PAUSE</button>
-				</li>								
+				</li>							
 			</ul>
 			</div>	
 		</nav>

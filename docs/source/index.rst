@@ -18,3 +18,12 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
+==================
+How to use it?
+==================
+- Signup for personal folders
+- Login from the homepage
+- Share files using the 6-character PIN
+- Receive using the same PIN
+- Look at the hosted files from the profile.

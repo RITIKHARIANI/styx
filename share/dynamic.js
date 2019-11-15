@@ -38,8 +38,12 @@ function getpfile(e){
 }
 
 function choosemethod(e){
-	alert('Hahaha');
+	var privacy = window.confirm('Do you want to use the public share?');
+	if(privacy)
+		getfile(e);
+	else
+		getpfile(e);
 }
 
 holy.addEventListener('click',progress,false);
-cow.addEventListener('click',getpfile,false);
+cow.addEventListener('click',choosemethod,false);
