@@ -30,7 +30,8 @@
     
     session_start();
     
-    $con = mysqli_connect("localhost","styx","webtech123");
+
+    $con = mysqli_connect("sql12.freesqldatabase.com","sql12311787","s6SXUShK2r");
     
     if($con)
     {
@@ -39,30 +40,28 @@
         echo "no connection";
     }
 
-    mysqli_select_db($con,'project');
 
-    $user = $_POST['username'];
-    $pass = $_POST['password'];
-    
-    $q = " select * from test where username = '$user' && password = '$pass' ";
-    $result = mysqli_query($con,$q);
-    $num = mysqli_num_rows($result);
 
-     echo "<script>alert('number',$num,'v')</script>";
+      mysqli_select_db($con,'sql12311787');
+
+      $user = $_POST['username'];
+      $pass = $_POST['password'];
     
-    if($num == 0)
-    {
-        echo("Invalid User");
-        header("location:index.html");
-    }
-    else
-    {
-        echo "Login Successful";
-        header("location:../index.html");
-        $cookie_name = "username";
-        $cookie_value = $user;
-        $path = "/";
-        $domain = $_SERVER['SERVER_NAME'];
-        setcookie($cookie_name, $cookie_value, time()+(60*60*2),$path,$domain);
-    }
+      $q = " select * from Accounts where Username = '$user' && Password = '$pass' ";
+      $result = mysqli_query($con,$q);
+      $num = mysqli_num_rows($result);
+      if($num == 0)
+      {
+        $message = "Invalid Username or Password";
+        echo "<script type='text/javascript'>
+                alert('$message');
+                window.location.href='index.php';
+                </script>";
+      }
+      if($num == 1)
+      {
+          echo "Login Successful";
+          header("location:../index.html");
+      }
 ?>
+
