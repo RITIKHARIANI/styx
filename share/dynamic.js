@@ -47,3 +47,34 @@ function choosemethod(e){
 
 holy.addEventListener('click',progress,false);
 cow.addEventListener('click',choosemethod,false);
+
+
+function drag_box(e){
+	console.log('meow');
+	box = document.getElementById('dest');
+	box.style.background = 'red';
+	box.style.textAlign = 'center';
+	box.style.fontSize = '32px';
+	box.innerHTML = '<br>Drop stuff here';
+}
+
+function drag_box_leave(e){
+	// console.log('meow');
+	var box = document.getElementById('dest');
+	box.style.background = 'lightblue';
+	box.innerHTML = "";
+	// document.removeChild('body');
+}
+
+function drop_box(e){
+	e.preventDefault();
+	// e.stopPropagation();
+	alert('You have added a file');
+	var box = document.getElementById('dest');
+	box.innerHTML += "<br>New File";
+}
+
+dbox = document.getElementById('dest');
+dbox.addEventListener('dragover', drag_box, false);
+dbox.addEventListener('dragleave', drag_box_leave, false);
+dbox.addEventListener('drop', drop_box, false);
