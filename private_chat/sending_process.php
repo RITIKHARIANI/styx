@@ -11,10 +11,10 @@
                 $sender_name=$_SESSION['username'];
                 $receiver_name=$_GET['user'];
                 $message=$_POST['text'];
-                $date = date("Y-m-d h:i:sa");
+                $date = date("Y-m-d h:i:s");
 
-                $q='INSERT INTO `messages` (`id`,`sender_name`,`receiver_name`,`message_text`,`date_time`)
-                VALUES("","'.$sender_name.'","'.$receiver_name.'","'.$message.'","'.$date.'")';
+                $q='INSERT INTO `messages` (`sender_name`,`receiver_name`,`message_text`,`date_time`)
+                VALUES("'.$sender_name.'","'.$receiver_name.'","'.$message.'","'.$date.'")';
                 $r=mysqli_query($con,$q);
 
                 if($r){

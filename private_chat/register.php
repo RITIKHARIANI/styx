@@ -23,7 +23,8 @@
                 $user_name= $_POST['user_name'];
                 $password = $_POST['password'];
 
-                $q="INSERT INTO `users` (`id`,`user_name`,`password`) VALUES('','".$user_name."','".$password."')";
+                // $q="INSERT INTO `users` (`id`,`user_name`,`password`) VALUES('','".$user_name."','".$password."')";
+                $q = " insert into users values('$user_name','$password') ";
 
                 $r=mysqli_query($con,$q);
 

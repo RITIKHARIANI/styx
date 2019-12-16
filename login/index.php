@@ -1,6 +1,5 @@
-<?php 
-session_start();
-require_once("../private_chat/connection.php") ?>
+
+
 <!DOCTYPE html>
 <html>
 
@@ -15,7 +14,7 @@ require_once("../private_chat/connection.php") ?>
     <div class="login-box" id="lgbx1">
         <h1>Login</h1>
         <!--form login over here-->
-        <form method="post" action="./form_validate_login.php">
+        <form method="post" action="form_validate_login.php">
             <div class="texts">
                 <input type="text" name="username" placeholder="Enter Username" id="uname" required>
             </div>
@@ -27,34 +26,11 @@ require_once("../private_chat/connection.php") ?>
             <br><br>
             <a href="../register/index.php" class="btn" style="text-decoration: none;">Don't have an account? <b>Sign
                     Up</b><a>
-            
+
         </form>
     </div>
-    <?php 
-        if(isset($_POST['login']))
-        {
-            $user_name= $_POST['username'];
-            $password = $_POST['password'];
-            
-            $q='SELECT *  FROM `users` WHERE `user_name`="'.$user_name.'" AND `password`="'.$password.'" ';
-
-            $r=mysqli_query($con,$q);
-
-                if($r)
-                {
-                    if(mysqli_num_rows($r)>0){
-                    
-                    $_SESSION['username']=$user_name;
-                    header("location:../index.html");
-                    }else{
-                        echo "login fail";
-                    }
-                }else{
-                    echo $q;
-                }
-        }
-    ?>
     
+
 </body>
 
 </html>

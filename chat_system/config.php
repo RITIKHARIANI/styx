@@ -1,9 +1,9 @@
 <?php
 
 	$dbhost = "localhost";
-	$dbname = "chat_system";
-	$dbuser = "root";
-	$dbpass = '';
+	$dbname = "id11595626_styx";
+	$dbuser = "id11595626_root";
+	$dbpass = 'password';
 
 
 	try{

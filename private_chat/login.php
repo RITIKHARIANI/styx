@@ -36,7 +36,7 @@ require_once("connection.php") ?>
                     $_SESSION['username']=$user_name;
                     header("location:index.php");
                     }else{
-                        echo "login faikl";
+                        echo "login fail";
                     }
                 }else{
                     echo $q;

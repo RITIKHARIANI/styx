@@ -16,6 +16,8 @@
 </head>
 <body>
 	
+	<button><a href="../" id="homer">&lt; Home</a></button>
+	<h1 align="center">General Chat</h1>
 
 	<div class="centeralised">
 	
@@ -25,7 +27,7 @@
 		
 		<form action="" method="POST">
 			
-			<textarea class="txtarea" id="message" name="message"></textarea>
+			<textarea class="txtarea" id="message" name="message" placeholder="Enter your message Here"></textarea>
 
 		</form>
 

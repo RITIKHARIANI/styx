@@ -28,26 +28,15 @@
         
     }
     
-    session_start();
-    
+        session_start();
+        require_once("../private_chat/connection.php");
 
-    $con = mysqli_connect("databases.000webhost.com","id11595626_root","password");
-    
-    if($con)
-    {
-        echo "connection successful";
-    }else{
-        echo "no connection";
-    }
-
-
-
-      mysqli_select_db($con,'id11595626_styx');
-
+      if(isset($_POST['login']))
+      {
       $user = $_POST['username'];
       $pass = $_POST['password'];
     
-      $q = " select * from Accounts where Username = '$user' && Password = '$pass' ";
+      $q = " select * from Accounts where Username = '$user' AND Password = '$pass' ";
       $result = mysqli_query($con,$q);
       $num = mysqli_num_rows($result);
       if($num == 0)
@@ -58,10 +47,16 @@
                 window.location.href='index.php';
                 </script>";
       }
-      if($num == 1)
+      if($num >0)
       {
-          echo "Login Successful";
+        $_SESSION['username']=$user; 
+        $cookie_name = "username";
+        $cookie_value = $user;
+        $path = "/";
+        $domain = $_SERVER['SERVER_NAME'];
+        setcookie($cookie_name, $cookie_value, time()+(60*60*2),$path,$domain);
           header("location:../index.html");
+      }
       }
 ?>
 

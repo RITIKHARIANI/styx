@@ -23,17 +23,17 @@
         $sender_name=$_SESSION['username'];
         $receiver_name=$_POST['user_name'];
         $message=$_POST['message'];
-        $date= date("Y-m-d h:i:sa");
+        $date= date("Y-m-d h:i:s");
 
-        $q='INSERT INTO `messages` (`id`,`sender_name`,`receiver_name`,`message_text`,`date_time`)
-        VALUES("","'.$sender_name.'","'.$receiver_name.'","'.$message.'","'.$date.'")';
+        $q='INSERT INTO `messages` (`sender_name`,`receiver_name`,`message_text`,`date_time`)
+        VALUES("'.$sender_name.'","'.$receiver_name.'","'.$message.'","'.$date.'")';
         $r=mysqli_query($con,$q);
         if($r)
         {
             header("location:index.php?user=".$receiver_name);
         }
         else{
-            echo $q;
+            echo $q; //query failed
         }
 
     }

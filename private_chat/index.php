@@ -26,7 +26,8 @@
             <div id="menu">
             <?php    
                 echo $_SESSION['username'];
-                echo '<a style="float:right; color: white;" href="logout.php">log out</a> ';
+                echo '<a href="../index.html" style="float:right; color:white;font-style:bold;">HOME</a>' ;
+                
             ?>
             </div>
             <!-- start of left column for friends list-->
@@ -36,14 +37,15 @@
             </div> 
 
             <div id="right-col">
-                <?php require_once("right-col.php "); ?>
+                <?php require_once("right-col.php"); ?>
             <!--end of right-col -->   
             </div>
         </div>
     </body>
 </html>
 <?php
-}else{
-    header("location:login.php");
+}
+else{
+  header("location:../index.html");
 }
 ?>

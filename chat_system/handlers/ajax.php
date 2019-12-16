@@ -15,7 +15,7 @@ if( isset($_REQUEST['action']) ){
 
 			$query = $db->prepare("INSERT INTO chat SET user=?, message=?");
 
-			$query->execute([$_SESSION['user'], $_REQUEST['message']]);
+			$query->execute([$_SESSION['username'], $_REQUEST['message']]);
 
 			echo 1;
 

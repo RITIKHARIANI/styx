@@ -4,7 +4,7 @@ ini_set('upload_max_filesize', "100M");
 ini_set('post_max_size', "101M");
 
 session_start();
-$con = mysqli_connect("databases.000webhost.com", "id11595626_root", "password");
+$con = mysqli_connect("localhost", "id11595626_root", "password");
 mysqli_select_db($con, "id11595626_styx");
 
 if(isset($_COOKIE["username"]))
