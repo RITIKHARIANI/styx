@@ -1,4 +1,6 @@
-
+<?php 
+session_start();
+require_once("../private_chat/connection.php") ?>
 <!DOCTYPE html>
 <html>
 
@@ -20,28 +22,39 @@
             <div class="texts">
                 <input type="password" name="password" placeholder="Enter password" id="passwd" required>
             </div>
-            <input type="checkbox" name="rems" value="remeber" id="ckset"> <span class="checks">Remember me </span><br>
-            <input class="btn" type="submit" name="subs" value="Login">
+            <input type="checkbox" name="remember" value="remember" id="ckset"> <span class="checks">Remember me </span><br>
+            <input class="btn" type="submit" name="login" value="Login">
             <br><br>
             <a href="../register/index.php" class="btn" style="text-decoration: none;">Don't have an account? <b>Sign
                     Up</b><a>
-
+            
         </form>
     </div>
-    <div class="register" id="rgbx1">
-        <h1>Register</h1>
-        <div class="texts">
-            <input type="text" name="logn" placeholder="username">
-        </div>
-        <div class="texts">
-            <input type="password" name="pasd" placeholder="password">
-        </div>
-        <div class="texts">
-            <input type="password" name="pasd" placeholder="confirm password">
-        </div>
-        <input class="btn" type="submit" name="subs" value="Sign up!" >
-        <input class="btn" type="submit" name="subs" value="Login" >
-    </div>
+    <?php 
+        if(isset($_POST['login']))
+        {
+            $user_name= $_POST['username'];
+            $password = $_POST['password'];
+            
+            $q='SELECT *  FROM `users` WHERE `user_name`="'.$user_name.'" AND `password`="'.$password.'" ';
+
+            $r=mysqli_query($con,$q);
+
+                if($r)
+                {
+                    if(mysqli_num_rows($r)>0){
+                    
+                    $_SESSION['username']=$user_name;
+                    header("location:../index.html");
+                    }else{
+                        echo "login fail";
+                    }
+                }else{
+                    echo $q;
+                }
+        }
+    ?>
+    
 </body>
 
 </html>

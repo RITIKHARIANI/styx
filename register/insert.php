@@ -35,7 +35,7 @@
     }
     if($num == 0)
     {
-        $qin = " insert into Accounts values('$user','$mail','$pass','$phone','$recmail') ";
+        $qin = " insert into Accounts values('','$user','$mail','$pass','$phone','$recmail') ";
         $result_new = mysqli_query($con,$qin);
         if($result_new)
         {
